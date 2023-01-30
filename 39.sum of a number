@@ -1,0 +1,26 @@
+
+import java.io.*;
+import java.util.*;
+
+class sum {
+	
+	static int getSum(int n)
+	{
+		int su = 0;
+		
+		while (n != 0)
+		{
+			su = su + n % 10;
+			n = n/10;
+		}
+	
+	return su;
+	}
+
+	public static void main(String[] args)
+	{
+		int n = 687;
+
+		System.out.println(getSum(n));
+	}
+}
